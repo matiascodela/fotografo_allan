@@ -1,0 +1,217 @@
+/*GRID INDEX INICIO*/
+#gridindex {
+    display: grid;  
+    grid-template-areas: 
+      "header header"
+      "subtitulo1 subtitulo1"
+      "texto1 imgindex"
+      "subtitulo2 subtitulo2"
+      "texto2 texto2"
+      "footer footer"; 
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr; 
+    grid-template-columns: auto 3fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    }  
+  header, footer, section{
+    padding: 1.2em;
+    background: $color1;
+    }
+  header {
+    grid-area: header;
+    }
+  section {
+    background-color: rgba(90, 90, 90, 0.1);
+  }
+  section#subtitulo1 { 
+    grid-area: subtitulo1;
+    background-color: $color1;     
+    }
+  section#texto1 { 
+    grid-area: texto1;      
+    }
+  section#imgindex { 
+    grid-area: imgindex;
+    background-color: $color1;     
+    }
+  section#subtitulo2 { 
+    grid-area: subtitulo2;
+    background-color: $color1;     
+    }
+  section#texto2 { 
+    grid-area: texto2;      
+    }
+  footer {
+    grid-area: footer;
+    }
+  /*GRID INDEX FIN*/
+  
+  /*GRID SERVICIOS INICIO*/
+  #gridservicios {
+    display: grid;  
+    grid-template-areas: 
+      "header"
+      "subtitulo1"
+      "tabla"
+      "footer"; 
+    grid-template-rows: 1fr 1fr 5fr 1fr; 
+    grid-template-columns: 100%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    }  
+  header, footer, section{
+    padding: 1.2em;
+    background: $color1;
+    }
+  header {
+    grid-area: header;
+    }
+  section {
+    background-color: $color3;
+  }
+  section#subtitulo1 { 
+    grid-area: subtitulo1;
+    background-color: $color1;     
+    }
+  section#tabla { 
+    grid-area: tabla;      
+    }
+  footer {
+    grid-area: footer;
+    }
+  /*GRID SERVICIOS FIN*/
+
+  /*GRID CLIENTES INICIO*/
+  #gridclientes {
+    display: grid;  
+    grid-template-areas: 
+      "header"
+      "subtitulo1"
+      "flexbox"
+      "footer"; 
+    grid-template-rows: 1fr 1fr 5fr 1fr; 
+    grid-template-columns: 100%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    }  
+  header, footer, section{
+    padding: 1.2em;
+    background: $color1;
+    }
+  header {
+    grid-area: header;
+    }
+  section {
+    background-color: $color3;
+  }
+  section#subtitulo1 { 
+    grid-area: subtitulo1;
+    background-color: $color1;     
+    }
+  section#flexbox { 
+    grid-area: flexbox;      
+    }
+  footer {
+    grid-area: footer;
+    }
+  /*GRID CLIENTES FIN*/
+
+  /*GRID CAMPAÑAS INICIO*/
+  #gridcampañas {
+    display: grid;  
+    grid-template-areas: 
+      "header"
+      "subtitulo1"
+      "video1"
+      "flexbox"
+      "video2"
+      "footer"; 
+    grid-template-rows: 1fr 1fr 2fr auto 2fr 1fr; 
+    grid-template-columns: 100%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    }  
+  header, footer, section{
+    padding: 1.2em;
+    background: $color1;
+    }
+  header {
+    grid-area: header;
+    }
+  section {
+    background-color: $color3;
+  }
+  section#subtitulo1 { 
+    grid-area: subtitulo1;
+    background-color: $color1;     
+    }
+  section#flexbox { 
+    grid-area: flexbox;      
+    }
+  section#video1 { 
+    grid-area: video1;
+    background: $color1;     
+    }
+  section#video2 { 
+    grid-area: video2;
+    background: $color1;     
+    }
+  footer {
+    grid-area: footer;
+    }
+  /*GRID CAMPAÑAS FIN*/
+
+  /*GRID CONTACTO INICIO*/
+  #gridcontacto {
+    display: grid;  
+    grid-template-areas: 
+      "header"
+      "subtitulo1"
+      "redes"
+      "subtitulo2"
+      "form"
+      "footer"; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 6fr 1fr; 
+    grid-template-columns: 100%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    }  
+  header, footer, section{
+    padding: 1.2em;
+    background: $color1;
+    }
+  header {
+    grid-area: header;
+    }
+  section {
+    background-color: $color3;
+  }
+  section#subtitulo1 { 
+    grid-area: subtitulo1;
+    background-color: $color1;     
+    }
+  section#redes { 
+    grid-area: redes;
+    background: $color1;      
+    }
+  section#subtitulo2 { 
+    grid-area: subtitulo2;
+    background-color: $color1;     
+    }
+  section#form { 
+    grid-area: form;      
+    }
+  footer {
+    grid-area: footer;
+    }
+  /*GRID CONTACTO FIN*/
