@@ -1,5 +1,5 @@
-#imagenAllan{
-  background-color:  $color4;
+#imagenAllan {
+  background-color: $color4;
   border: solid 5px $color3;
   border-radius: 300px;
   display: inline-block;
@@ -12,11 +12,11 @@
 /*VIDEO RESPONSIVE INICIO*/
 .video-responsive {
   position: relative;
-  padding-bottom: 56.25%; 
-  padding-top: 30px; 
+  padding-bottom: 56.25%;
+  padding-top: 30px;
   height: 0;
   overflow: hidden;
-  
+
   & iframe,
   & object,
   & embed {
@@ -31,18 +31,18 @@
 
 /*FLEXBOX CAMPAÑAS INICIO*/
 .containerImagen {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: row-reverse;
 }
 
-  .itemImagen {
-    width: 32%;
-    padding: 5px; 
-    position: relative;
-    transition: all 1s;
+.itemImagen {
+  width: 32%;
+  padding: 5px;
+  position: relative;
+  transition: all 1s;
 
   &:hover {
     background-color: $color4;

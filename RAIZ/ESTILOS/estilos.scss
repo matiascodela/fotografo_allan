@@ -1,22 +1,23 @@
 @import "SCSS/variables";
 @import "SCSS/grids";
-@import"SCSS/formsytablas";
-@import"SCSS/hs";
-@import"SCSS/menu";
-@import"SCSS/flexymedia";
+@import "SCSS/formsytablas";
+@import "SCSS/hs";
+@import "SCSS/menu";
+@import "SCSS/flexymedia";
+@import "SCSS/tarjetas";
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-.footer{
-    box-align: right;
-    color: $color2;
-    font-family: $fontf2;
-    font-size:100%;
-    line-height: 1.6;
-    text-align: right; 
-   }
+.footer {
+  box-align: right;
+  color: $color2;
+  font-family: $fontf2;
+  font-size: 100%;
+  line-height: 1.6;
+  text-align: right;
+}
 /*MEDIA QUERIES
    Mobile, portrait (vertical): Desde 320px
    /*@media  (orientation: portrait) {...} (orientación vertical)
@@ -32,4 +33,4 @@ body{
    Pantallas de Laptops: Desde 1366px
    Pantallas de computadoras de escritorio: 1680px
    /*@media  (min-device-pixel-ratio: 2) {...} (que minimamente tenga pixel ratio 2)
-     @media  (device-pixel-ratio: 3) {...} (que tenga pixel ratio 3) */   
+     @media  (device-pixel-ratio: 3) {...} (que tenga pixel ratio 3) */
