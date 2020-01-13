@@ -1,102 +1,77 @@
-form,
-button,
-input,
-select,
-textarea,
-option {
-  box-sizing: border-box;
-  color: $black;
-  display: inline-block;
-  margin: 5px;
-  position: relative;
-  vertical-align: top;
-  text-align: center;
-}
-span,
-label,
-legend {
-  box-sizing: border-box;
-  color: $black;
-  font-size: 100%;
-  height: 1px;
-  overflow: hidden;
-  width: 1px;
-}
-form {
-  left: 30%;
-}
-
-/*.form {
-  font-family: $fontf2;
+.redes {
+  display: flex;
+  width: 90%;
+  margin: auto;
   align-items: center;
-  width: 50%;
+  text-align: center;
+  a {
+    text-align: center;
+  }
+}
+
+.contenedor-formulario {
   position: relative;
-  height: 50px;
-  overflow: hidden;
-  background-color: rgba(90, 90, 90, 0.1);
-  color: $color2;
-
-  textarea {
-    font-family: $fontf2;
-    background-color: rgba(90, 90, 90, 0.1);
-    width: 100%;
-    height: 100%;
-    color: $color2;
-    padding-top: 20px;
-    border: none;
-    outline: none;
-  }
-
-  input {
-    font-family: $fontf2;
-    background-color: rgba(90, 90, 90, 0.1);
-    width: 100%;
-    height: 100%;
-    color: $color2;
-    padding-top: 20px;
-    border: none;
-    outline: none;
-  }
-  label {
-    color: $color2;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-  label::after {
-    content: "";
-    position: absolute;
-    color: $color2;
-    left: 0px;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid $color1;
-    transform: translateX(-100%);
-  }
+  width: 100%;
 }
 
-.content-name {
-  color: $color2;
-  position: absolute;
-  bottom: 5px;
-  left: 0px;
-  transition: all 0.3s ease;
+.formulario {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  background: $lightgrey;
+  padding: 30px;
+  border-radius: 5px;
 }
 
-.form input:focus + .label-name .content-name,
-.form input:valid + .label-name .content-name {
-  transform: translateY(-150%);
-  font-size: 14px;
-  color: $color2;
+.casilleros {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
 }
 
-.form input:focus + .label-name::after,
-.form input:valid + .label-name::after {
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-  color: $color2;
-}*/
+.casilleros,
+.msg {
+  width: 48%;
+}
+
+.casilleros .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid $darkgrey;
+  padding: 10px;
+  color: $black;
+  width: 100%;
+}
+
+.msg textarea {
+  height: 78%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  background: $white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: $black;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+input {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .formulario {
+    flex-direction: column;
+  }
+  .msg textarea {
+    height: 80px;
+  }
+  .casilleros,
+  .msg {
+    width: 100%;
+  }
+}

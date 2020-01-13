@@ -54,7 +54,6 @@ footer {
   display: flex;
   width: 90%;
   margin: auto;
-  max-height: 10vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -482,6 +481,113 @@ ul .nav-link:hover ul {
   }
   h2 {
     padding: 20px;
+  }
+}
+
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.redes a {
+  text-align: center;
+}
+
+.contenedor-formulario {
+  position: relative;
+  width: 100%;
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #d6d6d6;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.casilleros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 4%;
+}
+
+.casilleros,
+.msg {
+  width: 48%;
+}
+
+.casilleros .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #333333;
+  padding: 10px;
+  color: black;
+  width: 100%;
+}
+
+.msg textarea {
+  height: 78%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  background: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .formulario {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .msg textarea {
+    height: 80px;
+  }
+  .casilleros,
+  .msg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titulo-principal,
+  h1,
+  h2,
+  h3 {
+    margin: auto;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

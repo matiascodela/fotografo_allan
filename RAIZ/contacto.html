@@ -35,64 +35,33 @@
         </ul>
       </nav>
     </header>
-    <div id="gridcontacto">
-      <section id="subtitulo1">
+    <main>
+      <section class="titulo-principal">
         <h1>Contacto</h1>
-        <h2>Estas son mis redes</h2>
       </section>
-      <section id="redes">
+      <section class="servicios">
+          <h2>Estas son mis redes</h2>
+      <section class="redes">
         <a href="https://www.instagram.com/allansvargas_/"> Mi Instagram</a>
       </section>
-      <section id="subtitulo2">
         <h2>¡También puedes llenar este formulario para contactarme!</h2>
-      </section>
-      <section id="form">
-        <form>
-          <fieldset>
-            <span>Primero necesito estos datos</span>
-            <select name="genero">
-              <option value="H">Hombre</option>
-              <option value="M">Mujer</option>
-              <option value="O">Otro</option>
-            </select>
-            <br />
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" /> <br />
-            <label>E-mail</label>
-            <input type="email" name="email" /> <br />
-            <span
-              >Acepto términos y condiciones
-              <input type="checkbox" name="acepto" value="SI" /> </span
-            ><br />
-            <span>¿Qué me querías decir?</span><br />
-            <textarea placeholder="¡Escríbelo aquí!"></textarea><br />
-            <input type="submit" /><br />
-            <input type="reset" /> <br />
-          </fieldset>
-        </form>
-        <!--
-        <div class="form">
-          <input type="text" name="name" autocomplete="off" required />
-          <label for="name" class="label-name">
-            <span class="content-name">Dime tu Nombre y Apellido</span>
-          </label>
+      <div class="contenedor-formulario">
+        <div class="formulario">
+          <div class="casilleros">
+            <input type="text" class="input" placeholder="Nombre">
+            <input type="text" class="input" placeholder="E-mail ">
+            <input type="text" class="input" placeholder="Teléfono">
+            <input type="text" class="input" placeholder="¿Qué querías decirme?">
+          </div>
+          <div class="msg">
+            <textarea placeholder="¡Cuéntame aquí!"></textarea>
+            <div class="btn">Enviar</div>
+          </div>
         </div>
-        <div class="form">
-          <input type="text" name="email" autocomplete="off" required />
-          <label for="email" class="label-name">
-            <span class="content-name"> y aqui tu E-mail</span>
-          </label>
-        </div>
-        <div class="form">
-          <span>¿Qué me querías decir?</span><br />
-          <textarea placeholder="¡Escríbelo aquí!"></textarea><br />
-        </div>
-        <input type="submit" /><br />
-        <input type="reset" /> <br /> -->
-      </section>
-      <footer>
-        <p class="footer">Página realizada por Matías Codón Varela</p>
-      </footer>
+      </div>	
+    </section>
+      </main>
+      <footer>Página realizada por Matías Codón Varela</footer>
     </div>
   </body>
 </html>

@@ -38,7 +38,6 @@ footer {
   display: flex;
   width: 90%;
   margin: auto;
-  max-height: 10vh;
   align-items: center;
   text-align: center;
 }
@@ -58,6 +57,18 @@ footer {
 @import "SCSS/campania";
 @import "SCSS/index";
 @import "SCSS/clientes";
+@import "SCSS/formsytablas";
+
+@media screen and (max-width: 1024px) {
+  .titulo-principal,
+  h1,
+  h2,
+  h3 {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+}
 /*MEDIA QUERIES
    Mobile, portrait (vertical): Desde 320px
    /*@media  (orientation: portrait) {...} (orientación vertical)
