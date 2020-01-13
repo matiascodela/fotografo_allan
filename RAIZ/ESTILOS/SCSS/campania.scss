@@ -1,21 +1,13 @@
-#imagenAllan {
-  background-color: $color4;
-  border: solid 5px $color3;
-  border-radius: 300px;
-  display: inline-block;
-  height: 100%;
-  padding: 2px;
-  position: relative;
-  width: 100%;
-}
-
-/*VIDEO RESPONSIVE INICIO*/
+/*VIDEO RESPONSIVE*/
 .video-responsive {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0;
   overflow: hidden;
+  width: 90%;
+  margin: auto;
+  align-items: center;
 
   & iframe,
   & object,
@@ -27,10 +19,12 @@
     height: 100%;
   }
 }
-/*VIDEO RESPONSIVE FIN*/
 
-/*FLEXBOX CAMPAÑAS INICIO*/
+/*FLEXBOX CAMPAÑAS*/
 .containerImagen {
+  width: 90%;
+  margin: auto;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -45,21 +39,15 @@
   transition: all 1s;
 
   &:hover {
-    background-color: $color4;
+    background-color: $lightgrey;
   }
 }
-/*FLEXBOX CAMPAÑAS FIN*/
 
-/*FLEXBOX CLIENTES INICIO*/
-.containerclientes {
-  display: flex;
-}
-.itemcliente {
-  flex-grow: 1;
-  width: 100px;
-
-  & + & {
-    margin-left: 2%;
+@media screen and (max-width: 1024px) {
+  .containerImagen {
+    flex-direction: column;
+  }
+  .itemImagen {
+    width: 100%;
   }
 }
-/*FLEXBOX CLIENTES FIN*/
