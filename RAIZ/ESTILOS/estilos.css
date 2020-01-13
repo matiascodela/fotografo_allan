@@ -1,17 +1,4 @@
 @charset "UTF-8";
-.titulo-principal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90%;
-  margin: auto;
-  max-height: 20vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
 .presentacion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,12 +8,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .texto1 {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .foto {
@@ -41,12 +29,6 @@
   padding: 10px;
   -webkit-animation: drop 3s ease;
           animation: drop 3s ease;
-}
-
-.texto2 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 @-webkit-keyframes drop {
@@ -86,6 +68,67 @@
     margin-top: 5vh;
     text-align: center;
   }
+  .foto {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .foto img {
+    padding: 20px;
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
+.presentacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tabla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabla table {
+  min-height: 60vh;
+  border: 2px solid #333333;
+  border-spacing: 0;
+  width: 90%;
+  color: black;
+}
+
+.tabla th,
+.tabla td {
+  border: 1px solid #333333;
+  border-spacing: 0;
+  text-align: center;
+  vertical-align: center;
+  width: 25%;
+}
+
+.tabla th p,
+.tabla td p {
+  padding: 10px;
 }
 
 h1 {
@@ -203,6 +246,19 @@ footer {
   -webkit-box-align: right;
       -ms-flex-align: right;
           align-items: right;
+}
+
+.titulo-principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  max-height: 20vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 /*MEDIA QUERIES

@@ -1,0 +1,33 @@
+.presentacion {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tabla {
+  table {
+    min-height: 60vh;
+    border: 2px solid $darkgrey;
+    border-spacing: 0;
+    width: 90%;
+    color: $black;
+  }
+  th,
+  td {
+    border: 1px solid $darkgrey;
+    border-spacing: 0;
+    text-align: center;
+    vertical-align: center;
+    width: 25%;
+    p {
+      padding: 10px;
+    }
+  }
+  display: flex;
+  flex: 1;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}

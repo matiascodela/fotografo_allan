@@ -1,5 +1,6 @@
 @import "SCSS/variables";
 @import "SCSS/index";
+@import "SCSS/servicios";
 @import "SCSS/hs";
 @import "SCSS/menu";
 
@@ -26,6 +27,15 @@ footer {
   width: 90%;
   margin: auto;
   align-items: right;
+}
+
+.titulo-principal {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  max-height: 20vh;
+  align-items: center;
+  text-align: center;
 }
 
 /*MEDIA QUERIES
