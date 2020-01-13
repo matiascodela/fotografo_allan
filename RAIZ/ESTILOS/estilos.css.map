@@ -10,7 +10,7 @@
         "SCSS/campania.scss",
         "SCSS/index.scss",
         "SCSS/clientes.scss",
-        "SCSS/_formsytablas.scss"
+        "SCSS/formyredes.scss"
     ],
     "names": [],
     "file": "estilos.css"
