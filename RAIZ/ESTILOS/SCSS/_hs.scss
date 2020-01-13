@@ -1,58 +1,32 @@
 h1 {
-    color: $color2;
-    font-family: $fontf1;
-    font-size:200%;
-    font-weight: bold;
-    letter-spacing: 5px;
-    text-align: center;
-    text-transform: capitalize;
+  color: $black;
+  font-size: 44px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
 }
-   
-.botonh2:hover:before {
-    height: 100%;
-}
-.botonh2 {
-    color: $color2;     
-    font-family: $fontf1;
-    font-size:160%;
-    font-weight: lighter;
-    left: 2%;
-    padding: 10px;
-    background: $color4;
-    border: solid 2px $color5;
-    position: relative;
-    text-align: left;
-}
-.botonh2:before {
-      content:"";
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 0px;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.1);
-      transition: all 1s ease;
-} 
-.botonh2:hover:before {
-    width: 100%;
+h2 {
+  color: $darkgrey;
+  font-size: 33px;
+  font-weight: 300;
+  padding: 20px 20px 15px 0px;
+  letter-spacing: 1px;
+  text-align: left;
 }
 
 h3 {
-    color: $color2;
-    font-family: $fontf1;
-    font-size:130%;
-    font-weight: lighter;
-    text-align: left;
+  color: $lightgrey;
+  font-size: 24px;
+  font-weight: lighter;
+  padding: 20px 20px 15px 0px;
+  text-align: left;
 }
 
 p {
-    color: $color2;
-    display: block;
-    font-family: $fontf2;
-    font-weight: lighter; 
-    font-size:100%;
-    left: 1%;
-    line-height: 1.6;
-    position: relative;
-    text-align: left;
+  margin-top: 5px;
+  color: $black;
+  position: relative;
+  text-align: left;
 }

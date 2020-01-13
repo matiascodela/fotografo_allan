@@ -1,22 +1,31 @@
 @import "SCSS/variables";
-@import "SCSS/grids";
-@import "SCSS/formsytablas";
+@import "SCSS/index";
 @import "SCSS/hs";
 @import "SCSS/menu";
-@import "SCSS/flexymedia";
-@import "SCSS/tarjetas";
 
-body {
-  background-color: black;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.footer {
-  box-align: right;
-  color: $color2;
-  font-family: $fontf2;
-  font-size: 100%;
-  line-height: 1.6;
-  text-align: right;
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: right;
 }
 
 /*MEDIA QUERIES

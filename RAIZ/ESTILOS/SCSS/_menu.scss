@@ -1,43 +1,47 @@
-ul {
-    font-size: 0;
-    list-style:none;
-    padding: 0;
-    width: 100%;
-
-    & ul { 
-        display: none; 
-        position: absolute;
-
-        & li { 
-            width: 100%;
-
-        }
-    }
-}
-li {
-    display: inline-block;
-    position:relative;
-    width: 25%;
-
-    ul &:hover ul {
-        display:block;
-        font-family: $fontf1;
-    }
+nav {
+  width: 100%;
 }
 
-a {
-    background-color: $color6;
-    color:$color2;
+.nav-links {
+  border: 0px 1.5px 1.5px 1.5px solid $darkgrey;
+  font-size: 0;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+
+  & ul {
+    display: none;
+    position: absolute;
+
+    & li {
+      width: 100%;
+    }
+  }
+}
+.nav-link {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  z-index: 1;
+
+  ul &:hover ul {
     display: block;
-    font-family: $fontf1;
-    font-size: 14px;
-    font-weight: bolder;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: capitalize;
+  }
+}
 
-    &:hover {
-        background-color: $color5;
-    }
+.link-menu {
+  background-color: white;
+  border-bottom: 1px solid;
+  color: black;
+  display: block;
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    background-color: $lightgrey;
+  }
 }

@@ -1,0 +1,56 @@
+.titulo-principal {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  max-height: 20vh;
+  align-items: center;
+  text-align: center;
+}
+
+.presentacion {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+.texto1 {
+  flex: 3;
+}
+
+.foto {
+  flex: 1;
+  img {
+    height: 50vh;
+    border-radius: 200px;
+    padding: 10px;
+    animation: drop 3s ease;
+  }
+}
+
+.texto2 {
+  flex: 1;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateX(450px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .presentacion {
+    flex-direction: column;
+  }
+  .texto1 {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .texto2 {
+    margin-top: 5vh;
+    text-align: center;
+  }
+}
