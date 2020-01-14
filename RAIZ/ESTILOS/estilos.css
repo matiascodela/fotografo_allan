@@ -488,7 +488,6 @@ ul .nav-link:hover ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
   margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -497,7 +496,38 @@ ul .nav-link:hover ul {
 }
 
 .redes a {
-  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  background: #333333;
+  color: white;
+  margin: 0 10px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 22px;
+}
+
+.redes a:hover {
+  background: black;
+}
+
+.redes a:hover i {
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.redes a:hover > i {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
 }
 
 .contenedor-formulario {

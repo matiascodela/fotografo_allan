@@ -1,11 +1,29 @@
 .redes {
   display: flex;
-  width: 90%;
   margin: auto;
   align-items: center;
   text-align: center;
   a {
-    text-align: center;
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    background: $darkgrey;
+    color: $white;
+    margin: 0 10px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 22px;
+    &:hover {
+      background: $black;
+      i {
+        transition: 0.4s all;
+      }
+      > i {
+        transform: scale(1.6);
+      }
+    }
   }
 }
 
