@@ -1,3 +1,5 @@
+@import "SCSS/variables";
+
 * {
   margin: 0px;
   padding: 0px;
@@ -17,12 +19,15 @@ header {
 }
 
 footer {
+  background-color: $lightgrey;
   display: flex;
   width: 90%;
   margin: auto;
-  text-align: right;
-  align-items: right;
-  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .titulo-principal {
@@ -50,7 +55,6 @@ footer {
   text-align: center;
 }
 
-@import "SCSS/variables";
 @import "SCSS/servicios";
 @import "SCSS/hs";
 @import "SCSS/menu";
@@ -69,6 +73,8 @@ footer {
     align-items: center;
   }
 }
+
+@import "SCSS/error404";
 /*MEDIA QUERIES
    Mobile, portrait (vertical): Desde 320px
    /*@media  (orientation: portrait) {...} (orientación vertical)

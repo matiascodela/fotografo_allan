@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  color: $darkgrey;
+  flex-direction: column;
+
+  h1 {
+    font-size: 160px;
+    margin: auto;
+    font-weight: 900;
+    letter-spacing: 20px;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    margin: 20px;
+  }
+  a {
+    text-decoration: none;
+    background: $darkgrey;
+    color: $white;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    &:hover {
+      background: $black;
+    }
+  }
+}

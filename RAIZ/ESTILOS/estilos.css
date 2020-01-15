@@ -23,16 +23,17 @@ header {
 }
 
 footer {
+  background-color: #d6d6d6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 90%;
   margin: auto;
-  text-align: right;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
-  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .titulo-principal {
@@ -132,6 +133,7 @@ h1 {
   position: relative;
   text-align: center;
   text-transform: capitalize;
+  margin: auto;
 }
 
 h2 {
@@ -619,6 +621,61 @@ input {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #333333;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container h1 {
+  font-size: 160px;
+  margin: auto;
+  font-weight: 900;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.container p {
+  text-align: center;
+  margin: 20px;
+}
+
+.container a {
+  text-decoration: none;
+  background: #333333;
+  color: white;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.container a:hover {
+  background: black;
 }
 
 /*MEDIA QUERIES
