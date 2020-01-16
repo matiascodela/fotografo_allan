@@ -34,7 +34,6 @@ footer {
   display: flex;
   width: 90%;
   margin: auto;
-  max-height: 20vh;
   align-items: center;
   text-align: center;
 }
@@ -55,6 +54,7 @@ footer {
   text-align: center;
 }
 
+@import "SCSS/error404";
 @import "SCSS/servicios";
 @import "SCSS/hs";
 @import "SCSS/menu";
@@ -74,7 +74,6 @@ footer {
   }
 }
 
-@import "SCSS/error404";
 /*MEDIA QUERIES
    Mobile, portrait (vertical): Desde 320px
    /*@media  (orientation: portrait) {...} (orientación vertical)
