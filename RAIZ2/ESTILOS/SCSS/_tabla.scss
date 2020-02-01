@@ -1,0 +1,26 @@
+#tabla {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: none;
+  table {
+    min-height: 60vh;
+    border: 2px solid $darkgrey;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-spacing: 0;
+    width: 100%;
+    color: black;
+  }
+  th,
+  td {
+    border-bottom: 1px solid $darkgrey;
+    border-spacing: 0;
+    text-align: center;
+    vertical-align: center;
+    width: 25%;
+    p {
+      padding: 10px;
+    }
+  }
+}

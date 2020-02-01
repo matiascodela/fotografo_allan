@@ -1,0 +1,236 @@
+/*I-ESTILO PARA index2.html*/
+/*I-MEDIA QUERIE DEFAULT (mobile first) index2.html*/
+#grid_index2 {
+  display: grid;
+  max-width: 90%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "txt1 txt1 txt1 txt1"
+    "txt2 txt2 txt2 txt2"
+    "pie pie pie pie";
+  nav {
+    grid-area: nav;
+  }
+  section#titulo {
+    grid-area: titulo;
+  }
+  section#txt1 {
+    grid-area: txt1;
+    padding: 30px;
+  }
+  section#txt2 {
+    grid-area: txt2;
+    padding: 30px;
+  }
+  footer {
+    grid-area: pie;
+  }
+}
+/*F-MEDIA QUERIE DEFAULT (mobile first) index2.html*/
+/*--Al encontrar una pantalla que supere los 760px se va a activar el siguientemedia querie*/
+/*I-MEDIA QUERIE PARA PANTALLAS (mayores a 760px) index2.html*/
+@media screen and (min-width: 760px) {
+  #grid_index2 {
+    display: grid;
+    max-width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+      "nav nav nav nav"
+      "titulo titulo titulo titulo"
+      "txt1 txt1 txt1 ."
+      "txt1 txt1 txt1 ."
+      ". txt2 txt2 txt2"
+      ". txt2 txt2 txt2"
+      "pie pie pie pie";
+    nav {
+      grid-area: nav;
+    }
+    section#titulo {
+      grid-area: titulo;
+    }
+    section#txt1 {
+      grid-area: txt1;
+      padding: 30px;
+    }
+    section#txt2 {
+      grid-area: txt2;
+      padding: 30px;
+    }
+    footer {
+      grid-area: pie;
+    }
+  }
+}
+/*F-MEDIA QUERIE PARA PANTALLAS (mayores a 760px) index2.html*/
+/*F-ESTILO PARA index2.html*/
+
+/*I-ESTILO PARA servicios2.html*/
+#grid_servicios2 {
+  display: grid;
+  max-width: 90%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "subtitulo subtitulo subtitulo subtitulo"
+    "tabla tabla tabla tabla"
+    "pie pie pie pie";
+  nav {
+    grid-area: nav;
+  }
+  section#titulo {
+    grid-area: titulo;
+  }
+  section#subtitulo {
+    grid-area: subtitulo;
+  }
+  section#tabla {
+    grid-area: tabla;
+  }
+  footer {
+    grid-area: pie;
+  }
+}
+/*F-ESTILO PARA servicios2.html*/
+/*--No posee media queries ya que el grid es el mismo tanto en escritorio como mobile*/
+
+/*I-ESTILO PARA clientes2.html*/
+#grid_clientes2 {
+  display: grid;
+  max-width: 90%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "subtitulo subtitulo subtitulo subtitulo"
+    "tarjetas tarjetas tarjetas tarjetas"
+    "pie pie pie pie";
+  nav {
+    grid-area: nav;
+  }
+  section#titulo {
+    grid-area: titulo;
+  }
+  section#subtitulo {
+    grid-area: subtitulo;
+  }
+  section#tarjetas {
+    grid-area: tarjetas;
+  }
+  footer {
+    grid-area: pie;
+  }
+}
+/*F-ESTILO PARA clientes2.html*/
+/*--No posee media queries ya que el grid es el mismo tanto en escritorio como mobile*/
+
+/*I-ESTILO PARA contacto2.html*/
+/*I-MEDIA QUERIE DEFAULT (mobile first) contacto2.html*/
+#grid_contacto2 {
+  display: grid;
+  max-width: 90%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "subtitulo1 subtitulo1 subtitulo1 subtitulo1"
+    "redes redes redes redes"
+    "subtitulo2 subtitulo2 subtitulo2 subtitulo2"
+    "formulario formulario formulario formulario"
+    "pie pie pie pie";
+  nav {
+    grid-area: nav;
+  }
+  section#titulo {
+    grid-area: titulo;
+  }
+  section#subtitulo1 {
+    grid-area: subtitulo1;
+  }
+  section#redes {
+    grid-area: redes;
+  }
+  section#subtitulo2 {
+    grid-area: subtitulo2;
+  }
+  section#formulario {
+    grid-area: formulario;
+  }
+  footer {
+    grid-area: pie;
+  }
+}
+/*F-MEDIA QUERIE DEFAULT (mobile first) contacto2.html*/
+/*--Al encontrar una pantalla que supere los 760px se va a activar el siguiente media querie*/
+/*I-MEDIA QUERIE PARA PANTALLAS (mayores a 760px) contacto2.html*/
+@media screen and (min-width: 760px) {
+  #grid_contacto2 {
+    display: grid;
+    max-width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+      "nav nav nav nav nav nav"
+      "titulo titulo titulo titulo titulo titulo"
+      "subtitulo1 subtitulo1 . redes redes redes"
+      "subtitulo2 subtitulo2 . formulario formulario formulario"
+      "pie pie pie pie pie pie";
+    nav {
+      grid-area: nav;
+    }
+    section#titulo {
+      grid-area: titulo;
+    }
+    section#subtitulo1 {
+      grid-area: subtitulo1;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        text-align: left;
+      }
+    }
+    section#redes {
+      grid-area: redes;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    section#subtitulo2 {
+      grid-area: subtitulo2;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        text-align: left;
+      }
+    }
+    section#formulario {
+      grid-area: formulario;
+    }
+    footer {
+      grid-area: pie;
+    }
+  }
+}
+/*F-MEDIA QUERIE PARA PANTALLAS (mayores a 760px) contacto2.html*/
+/*F-ESTILO PARA contacto2.html*/

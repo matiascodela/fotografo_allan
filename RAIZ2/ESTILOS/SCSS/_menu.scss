@@ -1,0 +1,48 @@
+nav {
+  width: 100%;
+}
+
+.nav-links {
+  border: 0px 1.5px 1.5px 1.5px solid $darkgrey;
+  font-size: 0;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+
+  & ul {
+    display: none;
+    position: absolute;
+
+    & li {
+      width: 100%;
+    }
+  }
+}
+.nav-link {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  z-index: 1;
+
+  ul &:hover ul {
+    display: block;
+  }
+}
+
+.link-menu {
+  background-color: white;
+  border-bottom: 1px solid;
+  color: black;
+  display: block;
+  font-size: 14px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    background-color: $lightgrey;
+  }
+}

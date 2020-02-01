@@ -1,0 +1,82 @@
+.redes {
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  a {
+    display: -webkit-inline-box;
+    width: 60px;
+    height: 60px;
+    background: $darkgrey;
+    color: white;
+    margin: 0 10px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 22px;
+    &:hover {
+      background: black;
+      i {
+        transition: 0.4s all;
+      }
+      > i {
+        transform: scale(1.6);
+      }
+    }
+  }
+}
+
+.contenedor-formulario {
+  position: relative;
+  width: 100%;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+  background: $lightgrey;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.casilleros {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.casilleros,
+.msg {
+  width: 100%;
+}
+
+.casilleros .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid $darkgrey;
+  padding: 10px;
+  color: black;
+  width: 95%;
+}
+
+.msg textarea {
+  height: 78%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  background: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+input {
+  font-family: "Montserrat", sans-serif;
+}
