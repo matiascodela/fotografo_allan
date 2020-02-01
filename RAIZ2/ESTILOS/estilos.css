@@ -1,4 +1,199 @@
 @charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  background-color: #d6d6d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.titulo-principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.subtitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+/*I-VIDEO RESPONSIVE*/
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*F-VIDEO RESPONSIVE*/
+/*I-FLEXBOX CAMPAÑAS*/
+.containerImagen {
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.itemImagen {
+  width: 32%;
+  padding: 5px;
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.itemImagen:hover {
+  background-color: #d6d6d6;
+}
+
+/*F-FLEXBOX CAMPAÑAS*/
+@media screen and (max-width: 1024px) {
+  .containerImagen {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .itemImagen {
+    width: 100%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #333333;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container h1 {
+  font-size: 160px;
+  margin: auto;
+  font-weight: 900;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.container p {
+  text-align: center;
+  margin: 20px;
+}
+
+.container a {
+  text-decoration: none;
+  background: #333333;
+  color: white;
+  padding: 12px 24px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.container a:hover {
+  background: black;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+  }
+}
+
 /*I-ESTILO PARA index2.html*/
 /*I-MEDIA QUERIE DEFAULT (mobile first) index2.html*/
 #grid_index2 {
@@ -772,137 +967,4 @@ section#titulo {
       -ms-flex-align: center;
           align-items: center;
 }
-
-* {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90%;
-  height: 10vh;
-  margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer {
-  background-color: #d6d6d6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90%;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.titulo-principal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90%;
-  margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.subtitulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 90%;
-  margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-/*I-VIDEO RESPONSIVE*/
-.video-responsive {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-  width: 90%;
-  margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.video-responsive iframe,
-.video-responsive object,
-.video-responsive embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/*F-VIDEO RESPONSIVE*/
-/*I-FLEXBOX CAMPAÑAS*/
-.containerImagen {
-  width: 90%;
-  margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.itemImagen {
-  width: 32%;
-  padding: 5px;
-  position: relative;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.itemImagen:hover {
-  background-color: #d6d6d6;
-}
-
-/*F-FLEXBOX CAMPAÑAS*/
-@media screen and (max-width: 1024px) {
-  .containerImagen {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .itemImagen {
-    width: 100%;
-  }
-}
-/*# sourceMappingURL=estilos2.css.map */
+/*# sourceMappingURL=estilos.css.map */

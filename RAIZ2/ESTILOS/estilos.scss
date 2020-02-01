@@ -1,5 +1,7 @@
 $darkgrey: rgb(51, 51, 51);
 $lightgrey: rgb(214, 214, 214);
+@import "SCSS/campanias";
+@import "SCSS/error404";
 
 @import "SCSS/grids";
 @import "SCSS/menu";
@@ -60,5 +62,3 @@ section#titulo {
   justify-content: center;
   align-items: center;
 }
-
-@import "SCSS/campanias";
